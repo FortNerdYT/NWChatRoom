@@ -1,0 +1,71 @@
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --accent: #2d8cff;
+  --message-bg: #2d2d2d;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #252525;
+}
+
+.message {
+  padding: 8px 12px;
+  margin: 8px 0;
+  background: var(--message-bg);
+  border-radius: 4px;
+  max-width: 70%;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #252525;
+  color: var(--text-color);
+}
+
+button {
+  padding: 12px 24px;
+  background: var(--accent);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
